@@ -90,7 +90,7 @@ body {
 }
 
 .hero h1 {
-    color: var(--gold);
+    color: var(--plum);
   font-size: 3rem;
   margin-bottom: 10px;
 }
@@ -126,6 +126,14 @@ body {
   color: var(--gold);
 }
 
+#projectss{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
 .buttons {
   margin-top: 25px;
 }
@@ -147,9 +155,28 @@ body {
   color: var(--plum);
 }
 
-.btn:hover {
+.btnn {
   background: var(--gold);
-  color: var(--navy);
+  color: var(--plum);
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btnn:hover {
+  background: var(--navy);
+  color: var(--gold);
+}
+
+li {
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  list-style:none;
 }
 
 .section {
@@ -159,6 +186,7 @@ body {
 
 .card-wrapper {
   display: flex;
+  padding:40px 40px;
   justify-content: center;
   align-items: center;
   min-height: 70vh;
@@ -167,7 +195,7 @@ body {
 .card {
   background: var(--plum);
   color: var(--gold);
-  padding: 40px;
+  padding: 20px;
   border-radius: 12px;
   width: 100%;
   max-width: 600px;
@@ -191,61 +219,17 @@ body {
   object-fit: cover;
 }
 
-.project-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.project-grid-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.project-card {
-  background: var(--plum);
+.h2{
   color: var(--gold);
-  padding: 30px;
-  border-radius: 8px;
-  max-width: 500px;
-  transition: transform 0.3s ease;
+  padding: 22px;
 }
 
-.project-card-2 {
-  background: var(--plum);
+h3 {
   color: var(--gold);
-  padding: 30px;
-  border-radius: 8px;
-  max-width: 500px;
-  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
-}
-
-.project-card-2:hover {
-  transform: translateY(-8px);
-}
-
-.experience-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.experience-card {
-  background: var(--plum);
-  color: var(--gold);
-  padding: 30px;
-  border-radius: 8px;
-  max-width: 500px;
-  transition: transform 0.3s ease;
-}
 
 .btn.small {
   padding: 8px 20px;
@@ -258,8 +242,8 @@ body {
 
 .button {
   text-decoration: none;
-  color: var(--plum);
-  padding: 5px 10px;
+  background-color: var(--plum);
+  color: var(--gold);
 }
 
 footer {
@@ -293,10 +277,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+  
   .nav-links {
     display: none;
-    flex-direction: column;
-    background: white;
+    flex-direction:column;
+    background: var(--plum);
     position: absolute;
     right: 8%;
     top: 70px;
@@ -309,5 +294,6 @@ footer {
 
   .hamburger {
     display: block;
+    color: var(--gold);
   }
 }
